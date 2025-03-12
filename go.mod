@@ -1,4 +1,4 @@
-module github.com/goluxis/goredis-ext
+module github.com/aakash-a-dev/Goluxis
 
 go 1.21
 

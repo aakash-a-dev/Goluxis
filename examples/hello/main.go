@@ -9,8 +9,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/goluxis/goredis-ext/pkg/command"
-	"github.com/goluxis/goredis-ext/pkg/resp"
+	"github.com/aakash-a-dev/Goluxis/pkg/command"
+	"github.com/aakash-a-dev/Goluxis/pkg/resp"
 )
 
 type redisConn struct {
