@@ -1,21 +1,31 @@
-# GoRedis-Ext: Go-based Redis Extension Framework
+# GoLuxis
 
-GoRedis-Ext is a framework that enables developers to create Redis extensions and custom commands using Go. This project aims to simplify Redis extensibility by providing a Go-based alternative to C modules.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/aakash-a-dev/Goluxis/main/assets/logo.png" alt="GoLuxis Logo" width="200"/>
+  <h3>A Modern Go-based Redis Extension Framework</h3>
+  <p>Extend Redis functionality with the power and safety of Go</p>
 
-## Features
+  [![Go Version](https://img.shields.io/github/go-mod/go-version/aakash-a-dev/Goluxis)](https://github.com/aakash-a-dev/Goluxis)
+  [![License](https://img.shields.io/github/license/aakash-a-dev/Goluxis)](https://github.com/aakash-a-dev/Goluxis/blob/main/LICENSE)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/aakash-a-dev/Goluxis/blob/main/CONTRIBUTING.md)
+</div>
 
-- Create custom Redis commands in Go
-- Define new data structures
-- Extend Redis with business-specific logic
-- Simple and safe deployment compared to C modules
+## 🚀 Features
 
-## Installation
+- 🛠 Create custom Redis commands in Go
+- 🏗 Define new data structures
+- 🔌 Extend Redis with business-specific logic
+- 🔒 Simple and safe deployment compared to C modules
+- 🚦 Built-in connection management
+- 📝 Full RESP protocol support
+
+## 📦 Installation
 
 ```bash
-go get github.com/goluxis/goredis-ext
+go get github.com/aakash-a-dev/Goluxis
 ```
 
-## Quick Start
+## 🎯 Quick Start
 
 Here's a simple example of creating a custom Redis command:
 
@@ -23,7 +33,7 @@ Here's a simple example of creating a custom Redis command:
 package main
 
 import (
-    "github.com/goluxis/goredis-ext/pkg/command"
+    "github.com/aakash-a-dev/Goluxis/pkg/command"
 )
 
 func main() {
@@ -42,31 +52,60 @@ func main() {
 }
 ```
 
-## Use Cases
+## 🎉 Use Cases
 
-1. **Custom Search Capabilities**: Implement specialized search algorithms directly in Redis
-2. **Domain-Specific Data Structures**: Create custom data types for specific use cases
-3. **Real-time Processing**: Add business logic that runs directly within Redis
-4. **Complex Access Control**: Implement sophisticated access patterns
+### 1. Custom Search Capabilities
+Implement specialized search algorithms directly in Redis:
+```
+PRODUCTSEARCH shoes brand:nike color:red sort_by:popularity
+```
 
-## Project Status
+### 2. Domain-Specific Data Structures
+Create custom data types for specific use cases:
+```
+STOCKTS.ADD apple 2025-03-13 185.23
+STOCKTS.MOVINGAVG apple 30d
+```
 
-This project is currently in MVP (Minimum Viable Product) stage. Core features are being developed with a focus on:
+### 3. Real-time Processing
+Add business logic that runs directly within Redis:
+```
+RECOMMEND.PRODUCTS user:1234 limit:5 context:browsing
+```
 
-- Basic command registration and execution
-- Redis protocol compatibility
-- Connection management
-- Error handling
+## 🏗 Project Status
 
-## Contributing
+Currently in Beta (v0.1.0-beta). Core features:
+- ✅ Basic command registration and execution
+- ✅ Redis protocol compatibility
+- ✅ Connection management
+- ✅ Error handling
 
-Contributions are welcome! Please read our contributing guidelines and submit pull requests.
+Coming soon:
+- 🔄 Persistence layer
+- 📡 Replication support
+- 🔍 Advanced data types
+- 🛡 Enhanced error handling
 
-## License
+## 🤝 Contributing
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
-## Acknowledgments
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
 
 - Redis team for their amazing work
-- Go community for tools and support 
+- Go community for tools and support
+
+## 📚 Documentation
+
+For detailed documentation, please visit our [Wiki](https://github.com/aakash-a-dev/Goluxis/wiki).
+
+## 🔗 Links
+
+- [GitHub Repository](https://github.com/aakash-a-dev/Goluxis)
+- [Issue Tracker](https://github.com/aakash-a-dev/Goluxis/issues)
+- [Change Log](CHANGELOG.md) 
