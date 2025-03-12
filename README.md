@@ -1,7 +1,7 @@
 # GoLuxis
 
 <div align="center">
-  <img src="https://github.com/aakash-a-dev/Goluxis/assets/logo.png" alt="GoLuxis Logo" width="200"/>
+  <img src="/assets/logo.png" alt="GoLuxis Logo" width="200"/>
   <h3>A Modern Go-based Redis Extension Framework</h3>
   <p>Extend Redis functionality with the power and safety of Go</p>
 
